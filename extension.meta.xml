@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension id="favourite_shortcuts" status="experimental" xmlns="http://symphony-cms.com/schemas/extension/1.0">
+	<name>Favourite Shortcuts</name>
+	<description>Allows the developer to pre-set shortcuts in the Admin Menu. Authors will eventually be able to add their Favourite Items</description>
+	<authors>
+		<author>
+			<name symphony="gunglien">Jonathan Mifsud</name>
+			<email>info@jonmifsud.com</email>
+		</author>
+	</authors>
+	<releases>
+		<release version="0.1" date="2015-02-23" min="2.5" />
+	</releases>
+</extension>
