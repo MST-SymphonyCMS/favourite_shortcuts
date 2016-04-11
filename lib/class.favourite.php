@@ -69,6 +69,14 @@
 
 			$limit = "'author','manager','developer'";
 
+			if (ExtensionManager::fetchExtensionID('group_lock')){
+				$group = ExtensionManager::getInstance('group_lock')->getCurrentGroup();
+
+				if (isset($group)){
+					$limit .= ",'{$group}'";
+				}
+			}
+
 			$where = sprintf(" ( ( `limit` = 'user' AND `author_id` = '%d' ) OR `limit` in (%s) )",
 				Symphony::Author()->get('id'), 
 				$limit) ;
